@@ -1,0 +1,62 @@
+
+> assessoria-next@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.7 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.18.53:3000
+- Environments: .env.local
+✓ Ready in 569ms
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+ GET / 307 in 438ms (next.js: 196ms, proxy.ts: 75ms, application-code: 167ms)
+ GET / 307 in 1197ms (next.js: 5ms, proxy.ts: 1146ms, application-code: 46ms)
+ GET /casamentos 200 in 1055ms (next.js: 137ms, proxy.ts: 105ms, application-code: 813ms)
+ GET /configuracoes 200 in 260ms (next.js: 133ms, proxy.ts: 61ms, application-code: 66ms)
+ GET /casamentos 200 in 141ms (next.js: 3ms, proxy.ts: 37ms, application-code: 100ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/info 200 in 875ms (next.js: 583ms, proxy.ts: 42ms, application-code: 251ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/convidados 200 in 770ms (next.js: 518ms, proxy.ts: 52ms, application-code: 199ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/mesas 200 in 1061ms (next.js: 636ms, proxy.ts: 39ms, application-code: 386ms)
+ GET /login 200 in 208ms (next.js: 173ms, proxy.ts: 5ms, application-code: 31ms)
+ GET /login 200 in 37ms (next.js: 4ms, proxy.ts: 6ms, application-code: 27ms)
+ GET /casamentos 200 in 428ms (next.js: 4ms, proxy.ts: 131ms, application-code: 293ms)
+ GET /casamentos 200 in 590ms (next.js: 30ms, proxy.ts: 94ms, application-code: 465ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/info 200 in 254ms (next.js: 12ms, proxy.ts: 34ms, application-code: 208ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/mesas 200 in 237ms (next.js: 14ms, proxy.ts: 56ms, application-code: 167ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/financeiro 200 in 665ms (next.js: 491ms, proxy.ts: 30ms, application-code: 143ms)
+ GET /configuracoes 200 in 146ms (next.js: 4ms, proxy.ts: 56ms, application-code: 86ms)
+ GET /casamentos 200 in 161ms (next.js: 3ms, proxy.ts: 47ms, application-code: 111ms)
+✓ Compiled in 791ms
+ GET /casamentos 200 in 1142ms (next.js: 215ms, proxy.ts: 805ms, application-code: 122ms)
+ GET /casamentos 200 in 243ms (next.js: 4ms, proxy.ts: 178ms, application-code: 61ms)
+ GET /casamentos 200 in 198ms (next.js: 4ms, proxy.ts: 134ms, application-code: 60ms)
+✓ Compiled in 289ms
+ GET /casamentos 200 in 619ms (next.js: 170ms, proxy.ts: 347ms, application-code: 102ms)
+ GET /casamentos 200 in 201ms (next.js: 4ms, proxy.ts: 139ms, application-code: 57ms)
+ GET /casamentos 200 in 211ms (next.js: 3ms, proxy.ts: 164ms, application-code: 44ms)
+ GET /casamentos 200 in 171ms (next.js: 5ms, proxy.ts: 117ms, application-code: 49ms)
+✓ Compiled in 231ms
+ GET /casamentos 200 in 855ms (next.js: 110ms, proxy.ts: 620ms, application-code: 125ms)
+ GET /casamentos 200 in 187ms (next.js: 4ms, proxy.ts: 134ms, application-code: 50ms)
+ GET /casamentos 200 in 182ms (next.js: 3ms, proxy.ts: 131ms, application-code: 48ms)
+ GET /casamentos 200 in 142ms (next.js: 3ms, proxy.ts: 100ms, application-code: 38ms)
+✓ Compiled in 85ms
+ GET /casamentos 200 in 630ms (next.js: 150ms, proxy.ts: 384ms, application-code: 96ms)
+ GET /casamentos 200 in 220ms (next.js: 6ms, proxy.ts: 166ms, application-code: 47ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/info 200 in 3.6s (next.js: 36ms, proxy.ts: 200ms, application-code: 3.4s)
+ GET / 307 in 476ms (next.js: 30ms, proxy.ts: 281ms, application-code: 165ms)
+ GET /casamentos 200 in 368ms (next.js: 4ms, proxy.ts: 45ms, application-code: 319ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/info 200 in 269ms (next.js: 13ms, proxy.ts: 38ms, application-code: 218ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/convidados 200 in 356ms (next.js: 110ms, proxy.ts: 62ms, application-code: 185ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/mesas 200 in 894ms (next.js: 28ms, proxy.ts: 99ms, application-code: 766ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/financeiro 200 in 358ms (next.js: 109ms, proxy.ts: 94ms, application-code: 155ms)
+ GET /configuracoes 200 in 392ms (next.js: 21ms, proxy.ts: 312ms, application-code: 59ms)
+ GET /casamentos 200 in 212ms (next.js: 5ms, proxy.ts: 55ms, application-code: 151ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/info 200 in 338ms (next.js: 10ms, proxy.ts: 42ms, application-code: 286ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/convidados 200 in 146ms (next.js: 12ms, proxy.ts: 28ms, application-code: 107ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/mesas 200 in 172ms (next.js: 9ms, proxy.ts: 29ms, application-code: 134ms)
+ GET /casamentos 200 in 189ms (next.js: 4ms, proxy.ts: 95ms, application-code: 90ms)
+ GET /casamentos/d8281fff-2bf1-438f-a9fd-6699123122c5/info 200 in 178ms (next.js: 9ms, proxy.ts: 30ms, application-code: 138ms)
+ GET / 307 in 292ms (next.js: 51ms, proxy.ts: 50ms, application-code: 192ms)
+ GET / 307 in 674ms (next.js: 5ms, proxy.ts: 595ms, application-code: 74ms)
+ GET /casamentos 200 in 547ms (next.js: 9ms, proxy.ts: 74ms, application-code: 465ms)

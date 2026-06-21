@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  /* ─── Base ─────────────────────────────────────────────── */
+  --background:           #FBF4EF;   /* cream — fundo geral */
+  --foreground:           #3B2A26;   /* ink   — texto principal */
+
+  /* ─── Card / Popover ────────────────────────────────────── */
+  --card:                 #FFFFFF;   /* ivory */
+  --card-foreground:      #3B2A26;
+  --popover:              #FFFFFF;
+  --popover-foreground:   #3B2A26;
+
+  /* ─── Primary (ação principal) ──────────────────────────── */
+  --primary:              #C25A45;   /* terracotta */
+  --primary-foreground:   #FFFFFF;
+
+  /* ─── Secondary / Muted / Accent ────────────────────────── */
+  --secondary:            #FBE9E1;   /* blush-tint */
+  --secondary-foreground: #3B2A26;
+  --muted:                #FBE9E1;   /* blush-tint */
+  --muted-foreground:     #9A8079;
+  --accent:               #F6DCD0;   /* blush-soft */
+  --accent-foreground:    #3B2A26;
+
+  /* ─── Status ─────────────────────────────────────────────── */
+  --destructive:          #B5564A;
+  --success:              #5E8C6A;
+  --success-foreground:   #FFFFFF;
+  --warning:              #C99A4B;   /* gold / âmbar */
+  --warning-foreground:   #3B2A26;
+
+  /* ─── Border / Input / Ring ─────────────────────────────── */
+  --border:               #F0E2D9;   /* line */
+  --input:                #F0E2D9;
+  --ring:                 #C25A45;   /* terracotta — foco */
+
+  /* ─── Radius ─────────────────────────────────────────────── */
+  --radius: 0.875rem;   /* base ~14px → xl ≈ 20px, 2xl ≈ 25px */
+
+  /* ─── Brand extras (usados em inline styles e variantes) ── */
+  --blush:                #F4C2B0;
+  --blush-soft:           #F6DCD0;
+  --blush-tint:           #FBE9E1;
+  --rose:                 #D98E78;
+  --terracotta:           #C25A45;
+  --rosewood:             #9C4034;
+  --gold:                 #C99A4B;
+  --ink:                  #3B2A26;
+  --cream:                #FBF4EF;
+  --ivory:                #FFFFFF;
+  --line:                 #F0E2D9;
+
+  /* ─── Sidebar ────────────────────────────────────────────── */
+  --sidebar:              #FBF4EF;
+  --sidebar-foreground:   #3B2A26;
+  --sidebar-primary:      #C25A45;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent:       #FBE9E1;
+  --sidebar-accent-foreground:  #3B2A26;
+  --sidebar-border:       #F0E2D9;
+  --sidebar-ring:         #C25A45;
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html {
+    @apply font-sans;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.005em;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+}
+
+/* Títulos e números grandes — Cormorant Garamond */
+.font-serif-display {
+  font-family: var(--font-serif), 'Cormorant Garamond', 'Times New Roman', serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* Eyebrow — rótulos uppercase Manrope */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  font-weight: 600;
+}
