@@ -1,7 +1,8 @@
 'use client'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Home, Users, LayoutGrid, CircleDollarSign, MoreHorizontal, ChevronLeft } from 'lucide-react'
+import { usePathname, useRouter } from 'next/navigation'
+import { Home, Users, LayoutGrid, CircleDollarSign, MoreHorizontal, ChevronLeft, LogOut } from 'lucide-react'
+import { supabase } from '@/lib/supabase/client'
 
 const TABS = [
   { segment: 'info',       label: 'Início',     Icon: Home             },
@@ -13,8 +14,15 @@ const TABS = [
 
 export function DesktopSidebar() {
   const pathname = usePathname()
+  const router = useRouter()
   const match = pathname.match(/\/casamentos\/([^/]+)/)
   const casamentoId = match?.[1]
+
+  async function handleLogout() {
+    await supabase.auth.signOut()
+    router.push('/login')
+    router.refresh()
+  }
 
   return (
     <aside
@@ -44,7 +52,7 @@ export function DesktopSidebar() {
         </div>
       </div>
 
-      <div className="flex-1 px-3 pb-6 space-y-0.5">
+      <div className="flex-1 px-3 pb-3 space-y-0.5">
         {casamentoId ? (
           <>
             <Link
@@ -96,6 +104,17 @@ export function DesktopSidebar() {
             Casamentos
           </Link>
         )}
+      </div>
+      {/* Logout */}
+      <div className="px-3 pb-6">
+        <button
+          onClick={handleLogout}
+          className="flex w-full items-center gap-3 rounded-[12px] px-3 py-2.5 transition-colors hover:bg-red-50"
+          style={{ fontSize: 14, fontWeight: 500, color: '#B5564A' }}
+        >
+          <LogOut size={17} strokeWidth={1.8} />
+          Sair da conta
+        </button>
       </div>
     </aside>
   )

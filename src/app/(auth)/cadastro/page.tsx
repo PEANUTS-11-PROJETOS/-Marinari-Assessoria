@@ -1,7 +1,7 @@
-import { LoginForm } from '@/components/auth/login-form'
+import { CadastroForm } from '@/components/auth/cadastro-form'
 import Link from 'next/link'
 
-export default function LoginPage() {
+export default function CadastroPage() {
   return (
     <div
       className="flex min-h-screen items-center justify-center px-5"
@@ -24,9 +24,7 @@ export default function LoginPage() {
             className="flex h-10 w-10 items-center justify-center rounded-[14px] text-white"
             style={{
               background: 'linear-gradient(145deg, var(--blush) 0%, var(--rose) 100%)',
-              fontSize: 20,
-              lineHeight: 1,
-              fontFamily: 'var(--font-serif)',
+              fontSize: 20, lineHeight: 1, fontFamily: 'var(--font-serif)',
             }}
           >
             ♡
@@ -37,23 +35,22 @@ export default function LoginPage() {
           </div>
         </div>
 
-        {/* Headline */}
-        <p className="eyebrow mb-3">Bem-vinda ✦</p>
-        <h1 className="font-serif-display leading-[1.05]" style={{ fontSize: 38, color: 'var(--ink)' }}>
-          Cada casamento, <i>no detalhe</i>.
+        <p className="eyebrow mb-3">Criar conta ✦</p>
+        <h1 className="font-serif-display leading-[1.05]" style={{ fontSize: 34, color: 'var(--ink)' }}>
+          Comece a <i>organizar</i>.
         </h1>
         <p className="mt-3 leading-relaxed" style={{ fontSize: 14, color: 'var(--muted-foreground)' }}>
-          Entre para gerenciar convidados, mesas e fornecedores dos seus eventos.
+          Crie sua conta para gerenciar seus casamentos.
         </p>
 
         <div className="mt-8">
-          <LoginForm />
+          <CadastroForm />
         </div>
 
         <p className="mt-5 text-center" style={{ fontSize: 13, color: 'var(--muted-foreground)' }}>
-          Não tem conta?{' '}
-          <Link href="/cadastro" className="font-semibold hover:underline" style={{ color: 'var(--terracotta)' }}>
-            Criar conta
+          Já tem conta?{' '}
+          <Link href="/login" className="font-semibold hover:underline" style={{ color: 'var(--terracotta)' }}>
+            Entrar
           </Link>
         </p>
 
