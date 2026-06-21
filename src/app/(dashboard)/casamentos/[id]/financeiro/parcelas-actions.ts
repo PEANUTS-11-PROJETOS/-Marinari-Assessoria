@@ -42,7 +42,7 @@ export async function salvarParcela(casamentoId: string, parcelaId: string | nul
   if (!raw.servico_id) raw.servico_id = null as unknown as string
 
   const parsed = schema.safeParse(raw)
-  if (!parsed.success) return { error: parsed.error.errors[0].message }
+  if (!parsed.success) return { error: parsed.error.issues[0].message }
 
   const { descricao, valor, data_vencimento, pago, servico_id } = parsed.data
   const data = `${data_vencimento}-01`
