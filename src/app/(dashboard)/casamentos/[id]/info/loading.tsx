@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="animate-pulse space-y-4 px-5 pt-5 md:px-0">
+    <div className="animate-pulse space-y-4 px-5 pt-5 lg:px-0">
       {/* Hero card */}
       <div className="rounded-[22px] mx-0" style={{ height: 180, background: 'var(--blush-soft)' }} />
 

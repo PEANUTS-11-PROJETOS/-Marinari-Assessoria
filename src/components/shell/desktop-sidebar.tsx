@@ -26,7 +26,7 @@ export function DesktopSidebar() {
 
   return (
     <aside
-      className="hidden md:flex flex-col shrink-0 overflow-y-auto"
+      className="hidden lg:flex flex-col shrink-0 overflow-y-auto"
       style={{
         width: 260,
         background: '#FFFFFF',

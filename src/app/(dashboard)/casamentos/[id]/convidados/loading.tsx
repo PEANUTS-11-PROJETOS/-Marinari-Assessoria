@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="animate-pulse px-5 pt-5 md:px-0 space-y-4">
+    <div className="animate-pulse px-5 pt-5 lg:px-0 space-y-4">
       {/* KPIs */}
       <div className="grid grid-cols-3 gap-2">
         {[1, 2, 3].map(i => (

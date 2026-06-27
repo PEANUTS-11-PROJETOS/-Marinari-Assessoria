@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="px-5 pt-6 pb-6 md:max-w-3xl md:mx-auto md:px-8 md:py-8 space-y-3 animate-pulse">
+    <div className="px-5 pt-6 pb-6 lg:max-w-3xl lg:mx-auto lg:px-8 lg:py-8 space-y-3 animate-pulse">
       {[1, 2, 3].map(i => (
         <div key={i} className="rounded-[20px] p-5"
           style={{ background: 'var(--card)', border: '1px solid var(--line)', height: 96 }}>

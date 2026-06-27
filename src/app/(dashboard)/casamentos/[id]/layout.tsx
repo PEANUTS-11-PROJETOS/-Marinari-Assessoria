@@ -26,9 +26,9 @@ export default async function CasamentoLayout({
 
   return (
     <div className="flex flex-col" style={{ minHeight: '100dvh' }}>
-      {/* Back bar — mobile only (desktop usa sidebar) */}
+      {/* Back bar — mobile + tablet (desktop usa sidebar) */}
       <div
-        className="md:hidden flex shrink-0 items-center px-5 pt-12 pb-2"
+        className="lg:hidden flex shrink-0 items-center px-5 pt-12 pb-2 sm:pt-6"
         style={{ background: 'var(--cream)' }}
       >
         <Link
@@ -42,8 +42,8 @@ export default async function CasamentoLayout({
       </div>
 
       {/* Page content */}
-      <div className="flex-1 overflow-y-auto pb-[82px] md:pb-0">
-        <div className="md:max-w-3xl md:mx-auto md:px-8 md:py-6">
+      <div className="flex-1 overflow-y-auto pb-[82px] lg:pb-0">
+        <div className="lg:max-w-3xl lg:mx-auto lg:px-8 lg:py-6 sm:px-4 sm:py-2">
           {children}
         </div>
       </div>

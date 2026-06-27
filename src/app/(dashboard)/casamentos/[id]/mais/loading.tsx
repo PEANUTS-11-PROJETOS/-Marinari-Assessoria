@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="animate-pulse pb-6 space-y-5 px-5 md:px-0">
+    <div className="animate-pulse pb-6 space-y-5 px-5 lg:px-0">
       {[1, 2, 3].map(section => (
         <div key={section}>
           {/* Section header */}

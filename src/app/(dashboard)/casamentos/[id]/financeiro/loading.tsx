@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="animate-pulse space-y-6 px-5 md:px-0">
+    <div className="animate-pulse space-y-6 px-5 lg:px-0">
       {/* Hero financeiro */}
       <div className="rounded-[22px]" style={{ height: 120, background: 'var(--blush-soft)' }} />
 

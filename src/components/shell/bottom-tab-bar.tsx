@@ -15,18 +15,19 @@ export function CasamentoBottomTabBar({ casamentoId }: { casamentoId: string }) 
   const pathname = usePathname()
 
   return (
+    /* Celular: 440px centralizado — Tablet: largura total — Desktop: oculto */
     <div
-      className="md:hidden"
+      className="lg:hidden fixed bottom-0 z-50
+                 left-1/2 -translate-x-1/2 w-full max-w-[440px]
+                 sm:left-0 sm:translate-x-0 sm:max-w-full"
       style={{
-        position: 'fixed', bottom: 0, left: '50%', transform: 'translateX(-50%)',
-        width: '100%', maxWidth: 440, zIndex: 50,
         background: 'rgba(255,253,251,0.92)',
         backdropFilter: 'blur(18px) saturate(160%)',
         WebkitBackdropFilter: 'blur(18px) saturate(160%)',
         borderTop: '1px solid var(--line)',
       }}
     >
-      <div className="flex items-stretch">
+      <div className="flex items-stretch sm:max-w-2xl sm:mx-auto">
         {TABS.map(({ segment, label, Icon }) => {
           const href = `/casamentos/${casamentoId}/${segment}`
           const active = pathname.endsWith(`/${segment}`) || pathname.includes(`/${segment}/`)

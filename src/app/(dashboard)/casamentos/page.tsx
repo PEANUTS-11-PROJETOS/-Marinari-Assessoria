@@ -14,7 +14,7 @@ export default async function CasamentosPage() {
     .order('data_evento', { ascending: true })
 
   return (
-    <div className="space-y-6 px-5 pt-6 pb-6 md:max-w-3xl md:mx-auto md:px-8 md:py-8">
+    <div className="space-y-6 px-5 pt-6 pb-6 sm:px-6 sm:pt-8 lg:max-w-3xl lg:mx-auto lg:px-8 lg:py-8">
       <div className="flex items-center justify-between">
         <div>
           <p className="text-sm font-semibold" style={{ color: 'var(--rose)', letterSpacing: '0.3px' }}>Bom dia ✦</p>

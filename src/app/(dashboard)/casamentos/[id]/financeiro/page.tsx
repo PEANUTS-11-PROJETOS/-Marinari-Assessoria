@@ -23,7 +23,7 @@ export default async function FinanceiroPage({ params }: { params: Promise<{ id:
     <div className="space-y-8">
       <ServicosTable casamentoId={id} servicos={servicos ?? []} />
       <div
-        className="mx-5 mb-6 rounded-[20px] p-5 md:mx-0"
+        className="mx-5 mb-6 rounded-[20px] p-5 lg:mx-0"
         style={{ border: '1px solid var(--line)', background: 'var(--card)', boxShadow: '0 2px 10px rgba(142,59,46,0.05)' }}
       >
         <CronogramaFinanceiro
